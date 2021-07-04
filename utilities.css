@@ -1,0 +1,118 @@
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+h2, h3, h4{
+margin-bottom: 15px;
+}
+
+p{
+    font-size: 17px;
+    color: #9994AB;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    padding-right: 60px;
+}
+
+section{
+    padding: 30px 75px;
+    margin-bottom: 50px;
+}
+
+.main-color {
+    color: #2EB1EA;
+}
+
+/* button Start*/
+
+.cta-btn {
+    font-size: 15px;
+    font-weight: 900;
+    padding: 10px 30px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: 2px solid;
+}
+
+/* for hire me button */
+
+.cta-btn.hire{
+    color: #FF6B4E;
+    border-image: linear-gradient(to right, #FF8B69, #FF6B4E) 1;
+}
+
+.cta-btn.hire::before {
+    background-image: linear-gradient(to right, #FF8B69, #FF6B4E);
+}
+/* for resume me button */
+
+.cta-btn.resume{
+    color:  #7C2FD7;
+    border-image: linear-gradient(to right, #5961DD, #7C2FD7) 1;
+}
+
+.cta-btn.resume::before {
+    background-image: linear-gradient(to right, #5961DD, #7C2FD7);
+}
+
+.cta-btn:hover{
+    color: #fff;
+}
+
+.cta-btn::before {
+    transition: 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    z-index: -1;
+}
+
+.cta-btn:hover::before {
+    transform: translateX(0);
+
+}
+
+/* button End*/
+
+/* display flex */
+
+.d-flex{
+    display: flex;
+}
+
+.d-flex-section{
+    display: flex;
+    gap: 30px;
+}
+.d-flex-section > div{
+ flex-basis: 50%;
+}
+
+.jc-c{
+    justify-content: center;
+}
+
+.ai-c{
+    align-items: center;
+}
+
+.jc-sb{
+    justify-content: space-between;
+}
+
+
