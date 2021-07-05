@@ -52,7 +52,7 @@ transform: rotate(30deg);
     transition: 0.4s ease-in-out;
     color: rgb(136, 132, 132);
     font-size: 26px;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .header.active .logo{
