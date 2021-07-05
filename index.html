@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Animation AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="utilities.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -22,7 +24,7 @@
 <body>
 
     <!-- header -->
-    <header class="header d-flex jc-sb ai-c" id="header">
+    <header class="header d-flex jc-sb ai-c" id="header" data-aos="fade-down">
         <a href="#home" class="logo"> <i class="fas fa-code"></i> AB</a>
         <nav class="navbar hide-for-mobile">
             <ul class="d-flex">
@@ -47,67 +49,83 @@
         </div>
         <div class="hamburger-btn"><span></span><span></span><span></span></div>
     </header>
-<!-- hero section -->
+    <!-- hero section -->
     <section class="hero" id="home">
         <div class="hero-container d-flex-section jc-c ai-c">
             <div class="left">
-                <img src="images/bg.png" alt="egg-img" class="egg">
-                <h1 class="heading">Welcome to </h1>
-                <h1 class="sub-heading"> <span>AB Siddik </span> World </h1>
-                <h2> Modern Website Builder & Digital Marketer </h2>
-                <p>Assalamu Alaikum or Hello, My Name is AB Siddik. I am From Bangladesh & I am a Muslim. My hobbbies
+                <img src="images/bg.png" alt="egg-img" class="egg" data-aos="zoom-in">
+                <h1 class="heading" data-aos="fade-right">Welcome to </h1>
+                <h1 class="sub-heading" data-aos="fade-right"> <span>AB Siddik </span> World </h1>
+                <h2 data-aos="fade-up"> Modern Website Builder & Digital Marketer </h2>
+                <p data-aos="fade-up">Assalamu Alaikum or Hello, My Name is AB Siddik. I am From Bangladesh & I am a
+                    Muslim. My hobbbies
                     are to play cricket, Badminton. in my free time i also enjoy travelling. My Dream is to become a
                     successful Fullstack Web Developer & get a job on it. pray for me to the compassionate almighty
                     Allah as if i could get my dream job. May Allah keep safe each one of us in this pandemic situation
                 </p>
-                <a href="#" class="cta-btn hire">HIRE ME </a>
+                <a href="#" class="cta-btn hire" data-aos="fade-up">HIRE ME </a>
             </div>
-            <div class="right">
+            <div class="right" data-aos="zoom-in">
                 <img src="images/my-bg5.png" class="hero-img" alt="ab-siddik">
             </div>
         </div>
     </section>
 
-<!-- about section -->
+    <!-- about section -->
 
-<section class="about" id="about">
-    <div class="about-container d-flex-section ai-c">
-        <div class="left">
-            <img src="images/my-bg1.png" class="about-img" alt="ab-siddik">
+    <section class="about" id="about">
+        <div class="about-container d-flex-section ai-c">
+            <div class="left" data-aos="fade-right">
+                <img src="images/my-bg1.png" class="about-img" alt="ab-siddik">
+            </div>
+            <div class="right" data-aos="fade-up">
+                <h1>Dream Big</h1>
+                <h2>to become a Fullstack Web developer</h2>
+                <p>I already learned the HTML, CSS, SCSS, BOOTSTRAP, JS. I can build any kind of Static website. My goal
+                    is to learn about backend development & create fullstack website. </p>
+                <a href="#" class="cta-btn resume">DOWNLOAD RESUME </a>
+            </div>
         </div>
-        <div class="right">
-            <h1>Dream Big</h1>
-            <h2>to become a Fullstack Web developer</h2>
-            <p>I already learned the HTML,  CSS,  SCSS,  BOOTSTRAP, JS. I can build any kind of Static website. My goal is to learn about backend development & create fullstack website. </p>
-            <a href="#" class="cta-btn resume">DOWNLOAD RESUME </a>
+    </section>
+
+    <!-- Experiences -->
+
+    <section class="experience" id="experience">
+        <h1 class="experi-heading" data-aos="zoomi-in">Experiences </h1>
+        <div class="experi-container d-flex-section ai-c">
+            <div class="left item">
+                <h1>Full Stack Web Developer</h1>
+                <h3 class="main-color">2020-Present | Pro Level Developer</h3>
+                <p>I am the master of HTML, CSS and Javascript. I know everything needed to make a website function,
+                    efficient. I didn't stop with the web. I went beyond with most popular Javascript framework called
+                    Vue JS. I even know the deployment, server and security. I will give you 100% web solution.</p>
+            </div>
+            <div class="right item">
+                <h1>Baby Web Developer</h1>
+                <h3 class="main-color">020-2021 | Programming Hero Learner</h3>
+                <p>They didn't offer me a job. But I made myself as a remove web developer. I made their website and
+                    showed it to them. They liked it. And uploaded the content. It was fun working at Programming Hero.
+                </p>
+
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Experiences -->
+    <!-- footer -->
+    <footer>
+        <p>© ab siddik 2021, a Programming Hero initiative.</p>
+    </footer>
 
-<section class="experience" id="experience">
-    <h1 class="experi-heading">Experiences </h1>
-    <div class="experi-container d-flex-section ai-c">
-        <div class="left item">
-<h1>Full Stack Web Developer</h1>
-<h3 class="main-color">2020-Present | Pro Level Developer</h3>
-<p>I am the master of HTML, CSS and Javascript. I know everything needed to make a website function, efficient. I didn't stop with the web. I went beyond with most popular Javascript framework called Vue JS. I even know the deployment, server and security. I will give you 100% web solution.</p>
-        </div>
-        <div class="right item">
-<h1>Baby Web Developer</h1>
-<h3 class="main-color">020-2021 | Programming Hero Learner</h3>
-<p>They didn't offer me a job. But I made myself as a remove web developer. I made their website and showed it to them. They liked it. And uploaded the content. It was fun working at Programming Hero.</p>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            delay:100,
+            duration: 1200,
+        });
+    </script>
 
-        </div>
-    </div>
-</section>
-
-<!-- footer -->
-<footer>
-    <p>© ab siddik 2021, a Programming Hero initiative.</p>
-</footer>
-
-    <script src="script.js"></script>
+    </script>
+    <script src="script.js"> </script>
 </body>
+
 </html>
