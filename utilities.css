@@ -1,29 +1,40 @@
-a{
+a {
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-h1{
+h1 {
     font-size: 50px;
     font-weight: 700;
 }
 
-h2, h3, h4{
-margin-bottom: 15px;
+h2,
+h3,
+h4 {
+    margin-bottom: 15px;
 }
 
-p{
+p {
     font-size: 17px;
-    color: #9994AB;
+    color: #848288;
     margin-bottom: 20px;
     line-height: 1.5;
     padding-right: 60px;
 }
 
-section{
+:root {
+    --box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    --orange-linear: linear-gradient(to right, #FF8B69, #FF6B4E);
+    --orange-bottom-linear: linear-gradient(to top, #FF8B69, #FF6B4E);
+    --blue-linear: linear-gradient(to right, #5961DD, #7C2FD7);
+    --blue-bottom-linear: linear-gradient(to top, #5961DD, #7C2FD7);
+}
+
+
+section {
     padding: 30px 75px;
     margin-bottom: 50px;
 }
@@ -47,26 +58,27 @@ section{
 
 /* for hire me button */
 
-.cta-btn.hire{
+.cta-btn.hire {
     color: #FF6B4E;
-    border-image: linear-gradient(to right, #FF8B69, #FF6B4E) 1;
+    border-image: var(--orange-linear) 1;
 }
 
 .cta-btn.hire::before {
-    background-image: linear-gradient(to right, #FF8B69, #FF6B4E);
+    background-image: var(--orange-linear);
 }
+
 /* for resume me button */
 
-.cta-btn.resume{
-    color:  #7C2FD7;
-    border-image: linear-gradient(to right, #5961DD, #7C2FD7) 1;
+.cta-btn.resume {
+    color: #7C2FD7;
+    border-image: var(--blue-linear) 1;
 }
 
 .cta-btn.resume::before {
-    background-image: linear-gradient(to right, #5961DD, #7C2FD7);
+    background-image: var(--blue-linear) ;
 }
 
-.cta-btn:hover{
+.cta-btn:hover {
     color: #fff;
 }
 
@@ -91,28 +103,148 @@ section{
 
 /* display flex */
 
-.d-flex{
+.d-flex {
     display: flex;
 }
 
-.d-flex-section{
+.d-flex-section {
     display: flex;
     gap: 30px;
 }
-.d-flex-section > div{
- flex-basis: 50%;
+
+.d-flex-section>div {
+    flex-basis: 50%;
 }
 
-.jc-c{
+.jc-c {
     justify-content: center;
 }
 
-.ai-c{
+.ai-c {
     align-items: center;
 }
 
-.jc-sb{
+.jc-sb {
     justify-content: space-between;
 }
 
 
+@media screen and (max-width:1023px) {
+
+    .social-links {
+        display: none;
+    }
+
+    /* navbar for Mobile Start*/
+    .hamburger-btn {
+        width: 32px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    .hamburger-btn span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: rgb(129, 126, 126);
+    }
+
+    .hamburger-btn span:not(:last-child) {
+        margin-bottom: 5px;
+    }
+
+    .header ul {
+        margin-top: 80px;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -100%;
+        background-color: #fff;
+        width: 85%;
+        height: 40%;
+        flex-direction: column;
+        padding: 30px;
+        border-radius: 6px;
+        justify-content: center;
+        transition: 0.7s cubic-bezier(0.47, 0, 0.745, 0.715);
+        box-shadow: var(--box-shadow);
+    }
+    .header ul li:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    .header nav ul li a {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .header.open ul {
+        top: 0;
+    }
+
+    /* navbar for Mobile End*/
+}
+
+
+@media screen and (max-width:639px) {
+    p{
+        padding: 0 20px;
+    }
+h1{
+    font-size: 33px;
+}
+
+h2{
+    font-size: 20px;
+}
+    section{
+        padding: 30px;
+    }
+
+    #header {
+        padding: 10px 30px;
+    }
+
+    .d-flex-section{
+        flex-direction: column;
+    }
+    
+    .hero-container {
+    flex-direction: column-reverse;
+    }
+    
+.hero .left, .about .right{
+    text-align: center;
+}
+
+    .hero .right img.hero-img, .about .left img.about-img{
+        transform: translateX(0);
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .about {
+        background-size: 80px;
+    }
+    
+    .experience .experi-container .item h1{
+        font-size: 25px;
+    }
+    
+    .experience .experi-container .item h3{
+        font-size: 18px;
+    }
+    .experience .experi-container .item p{
+      padding: 0;
+    }
+
+
+
+}
+
+
+@media screen and (min-width:1024px) {
+    .hamburger-btn {
+        display: none;
+    }
+}

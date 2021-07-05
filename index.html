@@ -22,9 +22,9 @@
 <body>
 
     <!-- header -->
-    <header class="header d-flex jc-sb ai-c">
+    <header class="header d-flex jc-sb ai-c" id="header">
         <a href="#home" class="logo"> <i class="fas fa-code"></i> AB</a>
-        <nav class="navbar">
+        <nav class="navbar hide-for-mobile">
             <ul class="d-flex">
                 <li>
                     <a href="#home">Home </a>
@@ -45,6 +45,7 @@
             <a href="#"> <i class="fab fa-linkedin"></i> </a>
             <a href="#"> <i class="fab fa-instagram"></i> </a>
         </div>
+        <div class="hamburger-btn"><span></span><span></span><span></span></div>
     </header>
 <!-- hero section -->
     <section class="hero" id="home">
@@ -62,7 +63,7 @@
                 <a href="#" class="cta-btn hire">HIRE ME </a>
             </div>
             <div class="right">
-                <img src="images/my-bg5.png" alt="ab-siddik">
+                <img src="images/my-bg5.png" class="hero-img" alt="ab-siddik">
             </div>
         </div>
     </section>
@@ -72,7 +73,7 @@
 <section class="about" id="about">
     <div class="about-container d-flex-section ai-c">
         <div class="left">
-            <img src="images/my-bg1.png" alt="ab-siddik">
+            <img src="images/my-bg1.png" class="about-img" alt="ab-siddik">
         </div>
         <div class="right">
             <h1>Dream Big</h1>
@@ -83,7 +84,30 @@
     </div>
 </section>
 
+<!-- Experiences -->
+
+<section class="experience" id="experience">
+    <h1 class="experi-heading">Experiences </h1>
+    <div class="experi-container d-flex-section ai-c">
+        <div class="left item">
+<h1>Full Stack Web Developer</h1>
+<h3 class="main-color">2020-Present | Pro Level Developer</h3>
+<p>I am the master of HTML, CSS and Javascript. I know everything needed to make a website function, efficient. I didn't stop with the web. I went beyond with most popular Javascript framework called Vue JS. I even know the deployment, server and security. I will give you 100% web solution.</p>
+        </div>
+        <div class="right item">
+<h1>Baby Web Developer</h1>
+<h3 class="main-color">020-2021 | Programming Hero Learner</h3>
+<p>They didn't offer me a job. But I made myself as a remove web developer. I made their website and showed it to them. They liked it. And uploaded the content. It was fun working at Programming Hero.</p>
+
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<footer>
+    <p>© ab siddik 2021, a Programming Hero initiative.</p>
+</footer>
+
     <script src="script.js"></script>
 </body>
-
 </html>
